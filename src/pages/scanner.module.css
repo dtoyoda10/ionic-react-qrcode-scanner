@@ -1,0 +1,82 @@
+/* ==== Page Container ==== */
+.scannerPage {
+    height: 100%;
+    background-color: #191a1b;
+}
+
+.scannerContent {
+    height: 100%;
+}
+
+/* ==== Scanner Container ==== */
+.scannerContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scannerContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== Scanner Overlay Box ==== */
+.scanBox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 75vw;
+    height: 75vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.scanOutline {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 82vw;
+    height: 82vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 15;
+}
+
+.scannerIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 11;
+}
+
+/* ==== Scanner Line Animation ==== */
+.scannerLine {
+    top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    border-radius: 20px;
+    animation: moveUpDown 3s infinite ease-in-out;
+    z-index: 15;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(75vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

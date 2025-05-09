@@ -1,0 +1,33 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+:root {
+    /* App Colors */
+    --ion-color-primary: #00A884;
+    --ion-color-secondary: #3dc2ff;
+    --ion-color-tertiary: #5260ff;
+    --ion-color-success: #2dd36f;
+    --ion-color-warning: #ffc409;
+    --ion-color-danger: #eb445a;
+    --ion-color-dark: #222428;
+    --ion-color-medium: #92949c;
+    --ion-color-light: #f4f5f8;
+
+    /* Typography */
+    --font-family-base: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-lg: 18px;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /* Border Radius */
+    --border-radius: 8px;
+
+    /* Shadows */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
